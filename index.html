@@ -4,399 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FAB Plus Management Consultants — ISO Certification &amp; Compliance, Dubai</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
-
-  :root{
-    --ink:#182233;
-    --ink-soft:#2b3852;
-    --paper:#F4F2EC;
-    --paper-raised:#FBFAF6;
-    --rule:#CBC4B4;
-    --rule-soft:#DAD4C6;
-    --green:#2F5D4A;
-    --green-deep:#22453A;
-    --brass:#93732F;
-    --text-muted:#5C6474;
-    --serif: "Source Serif 4", Georgia, serif;
-    --sans: "IBM Plex Sans", -apple-system, sans-serif;
-    --mono: "IBM Plex Mono", monospace;
-    --maxw: 1180px;
-  }
-
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    font-family:var(--sans);
-    color:var(--ink);
-    background:var(--paper);
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-  }
-  img,svg{display:block;max-width:100%;}
-  a{color:inherit;}
-  h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:-0.01em;}
-  p{margin:0;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
-  code, .code{font-family:var(--mono);font-weight:500;letter-spacing:0.01em;}
-
-  a:focus-visible, button:focus-visible{
-    outline:2px solid var(--green);
-    outline-offset:3px;
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    *{animation:none !important; transition:none !important;}
-  }
-
-  /* ---------- Utility bar ---------- */
-  .utility{
-    background:var(--ink);
-    color:#C9CFDC;
-    font-size:13px;
-  }
-  .utility .wrap{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-top:9px;
-    padding-bottom:9px;
-    flex-wrap:wrap;
-    gap:8px;
-  }
-  .utility a{text-decoration:none;color:#C9CFDC;}
-  .utility a:hover{color:#fff;}
-  .utility-left{display:flex;gap:24px;flex-wrap:wrap;}
-  .utility-right{display:flex;gap:16px;}
-  .utility-right a{color:#8792A6;}
-  .utility-right a:hover{color:#fff;}
-
-  /* ---------- Header ---------- */
-  header.main{
-    background:var(--paper);
-    border-bottom:1px solid var(--rule);
-    position:sticky;
-    top:0;
-    z-index:50;
-  }
-  .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 32px;
-  }
-  .logo{
-    font-family:var(--serif);
-    font-size:22px;
-    font-weight:600;
-    display:flex;
-    align-items:baseline;
-    gap:2px;
-    text-decoration:none;
-  }
-  .logo .plus{color:var(--green);}
-  .navlinks{
-    display:flex;
-    gap:30px;
-    list-style:none;
-    margin:0;padding:0;
-    font-size:15px;
-  }
-  .navlinks a{text-decoration:none;}
-  .navlinks a:hover{color:var(--green-deep);}
-  .nav-cta{
-    display:flex;align-items:center;gap:18px;
-  }
-  .btn{
-    display:inline-block;
-    font-family:var(--sans);
-    font-size:14.5px;
-    font-weight:600;
-    padding:11px 20px;
-    border-radius:2px;
-    text-decoration:none;
-    border:1px solid transparent;
-    cursor:pointer;
-  }
-  .btn-primary{background:var(--green);color:#fff;}
-  .btn-primary:hover{background:var(--green-deep);}
-  .btn-ghost{background:transparent;border-color:var(--ink);color:var(--ink);}
-  .btn-ghost:hover{background:var(--ink);color:#fff;}
-  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
-  .menu-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;}
-
-  /* ---------- Hero ---------- */
-  .hero{
-    padding:76px 0 88px;
-    border-bottom:1px solid var(--rule);
-  }
-  .hero .wrap{
-    display:grid;
-    grid-template-columns:1.05fr 0.95fr;
-    gap:64px;
-    align-items:center;
-  }
-  .hero h1{
-    font-size:48px;
-    line-height:1.12;
-    max-width:12ch;
-  }
-  .hero .sub{
-    margin-top:22px;
-    font-size:17px;
-    color:var(--text-muted);
-    max-width:46ch;
-    line-height:1.6;
-  }
-  .hero .ctas{
-    margin-top:32px;
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-  }
-  .hero .fine{
-    margin-top:18px;
-    font-size:13px;
-    color:var(--text-muted);
-  }
-
-  /* certificate stack */
-  .cert-stack{
-    position:relative;
-    height:360px;
-  }
-  .cert-card{
-    position:absolute;
-    width:280px;
-    background:var(--paper-raised);
-    border:1px solid var(--rule);
-    padding:22px 22px 20px;
-    box-shadow:0 6px 18px rgba(24,34,51,0.08);
-  }
-  .cert-card .code{font-size:12px;color:var(--brass);}
-  .cert-card h3{font-size:17px;margin-top:6px;line-height:1.3;}
-  .cert-card .stamp{
-    margin-top:14px;
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    font-size:12px;
-    color:var(--green-deep);
-    font-weight:600;
-  }
-  .cert-card .stamp svg{width:14px;height:14px;}
-  .cert-c1{top:0;left:10px;transform:rotate(-4deg);z-index:1;}
-  .cert-c2{top:56px;left:120px;transform:rotate(3deg);z-index:2;}
-  .cert-c3{top:140px;left:20px;transform:rotate(-2deg);z-index:3;}
-  .cert-c4{top:198px;left:150px;transform:rotate(5deg);z-index:4;}
-
-  @keyframes settle{
-    from{opacity:0; transform:translateY(14px) rotate(var(--r,0deg));}
-    to{opacity:1; transform:translateY(0) rotate(var(--r,0deg));}
-  }
-  .cert-c1{animation:settle .6s ease-out both; --r:-4deg;}
-  .cert-c2{animation:settle .6s .08s ease-out both; --r:3deg;}
-  .cert-c3{animation:settle .6s .16s ease-out both; --r:-2deg;}
-  .cert-c4{animation:settle .6s .24s ease-out both; --r:5deg;}
-
-  /* ---------- Founding client band ---------- */
-  .founding{
-    background:var(--paper-raised);
-    border-bottom:1px solid var(--rule);
-    padding:36px 0;
-  }
-  .founding .wrap{
-    display:flex;
-    align-items:center;
-    gap:28px;
-    flex-wrap:wrap;
-  }
-  .founding-mark{
-    font-family:var(--mono);
-    font-size:12px;
-    color:var(--green-deep);
-    border:1px solid var(--green);
-    padding:5px 10px;
-    white-space:nowrap;
-  }
-  .founding p{
-    font-size:15px;
-    color:var(--ink-soft);
-    max-width:66ch;
-  }
-  .founding p strong{color:var(--ink);}
-  .founding-link{
-    margin-left:auto;
-    font-size:14.5px;
-    font-weight:600;
-    color:var(--green-deep);
-    text-decoration:none;
-    white-space:nowrap;
-  }
-  .founding-link:hover{text-decoration:underline;}
-
-  /* ---------- Section shell ---------- */
-  section{padding:88px 0;}
-  .section-head{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    margin-bottom:52px;
-    align-items:end;
-  }
-  .section-head h2{font-size:34px;line-height:1.2;max-width:16ch;}
-  .section-head .desc{font-size:16px;color:var(--text-muted);line-height:1.65;max-width:44ch;}
-  .eyebrow{
-    font-size:13px;
-    color:var(--brass);
-    font-weight:600;
-    margin-bottom:10px;
-    display:block;
-  }
-
-  /* ---------- Process ---------- */
-  .process{background:var(--ink);color:#E7E9EE;}
-  .process .section-head h2{color:#fff;}
-  .process .section-head .desc{color:#AAB2C4;}
-  .process .eyebrow{color:#8FBFA6;}
-  .steps{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:0;
-    border-top:1px solid #333F55;
-  }
-  .step{
-    padding:26px 20px 0 0;
-    border-right:1px solid #333F55;
-  }
-  .step:last-child{border-right:none;}
-  .step .num{
-    font-family:var(--mono);
-    font-size:13px;
-    color:#8FBFA6;
-    display:block;
-    margin-bottom:14px;
-  }
-  .step h3{font-size:17px;color:#fff;font-weight:600;font-family:var(--sans);}
-  .step p{margin-top:8px;font-size:14px;color:#AAB2C4;line-height:1.55;}
-
-  /* ---------- Services register ---------- */
-  .register{border-top:1px solid var(--rule);}
-  .reg-row{
-    display:grid;
-    grid-template-columns:150px 1fr 220px;
-    gap:28px;
-    padding:26px 0;
-    border-bottom:1px solid var(--rule);
-    align-items:start;
-  }
-  .reg-row .code{font-size:13px;color:var(--brass);padding-top:4px;}
-  .reg-row h3{font-size:19px;margin-bottom:8px;}
-  .reg-row p{font-size:15px;color:var(--text-muted);max-width:56ch;line-height:1.6;}
-  .reg-row .reg-link{
-    justify-self:end;
-    align-self:center;
-    font-size:14px;
-    font-weight:600;
-    color:var(--green-deep);
-    text-decoration:none;
-    white-space:nowrap;
-  }
-  .reg-row .reg-link:hover{text-decoration:underline;}
-
-  /* ---------- Why / differentiators ---------- */
-  .why{background:var(--paper-raised);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
-  .why-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:1px;
-    background:var(--rule);
-    border:1px solid var(--rule);
-  }
-  .why-item{background:var(--paper-raised);padding:32px;}
-  .why-item h3{font-size:18px;margin-bottom:10px;}
-  .why-item p{font-size:14.5px;color:var(--text-muted);line-height:1.6;}
-  .why-item .idx{font-family:var(--mono);font-size:12px;color:var(--green-deep);display:block;margin-bottom:14px;}
-
-  /* ---------- Insights ---------- */
-  .insights-list{border-top:1px solid var(--rule);}
-  .insight-row{
-    display:grid;
-    grid-template-columns:120px 1fr auto;
-    gap:24px;
-    padding:22px 0;
-    border-bottom:1px solid var(--rule);
-    align-items:baseline;
-    text-decoration:none;
-    color:var(--ink);
-  }
-  .insight-row .tag{font-size:12.5px;color:var(--brass);font-family:var(--mono);}
-  .insight-row h3{font-size:17px;font-weight:500;font-family:var(--sans);}
-  .insight-row .arrow{color:var(--green-deep);font-size:14px;}
-  .insight-row:hover h3{text-decoration:underline;}
-
-  /* ---------- CTA band ---------- */
-  .cta-band{
-    background:var(--green-deep);
-    color:#fff;
-    text-align:left;
-  }
-  .cta-band .wrap{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:24px;
-    flex-wrap:wrap;
-  }
-  .cta-band h2{color:#fff;font-size:30px;max-width:16ch;}
-  .cta-band .btn-primary{background:#fff;color:var(--green-deep);}
-  .cta-band .btn-primary:hover{background:#EFEDE5;}
-
-  /* ---------- Footer ---------- */
-  footer{background:var(--ink);color:#AAB2C4;padding:64px 0 28px;font-size:14px;}
-  .foot-grid{
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr 1fr;
-    gap:32px;
-    padding-bottom:44px;
-    border-bottom:1px solid #2E3A52;
-  }
-  footer h4{color:#fff;font-family:var(--sans);font-size:13.5px;font-weight:600;margin-bottom:16px;}
-  footer .foot-brand{font-family:var(--serif);font-size:20px;color:#fff;margin-bottom:14px;}
-  footer .foot-desc{max-width:38ch;line-height:1.6;color:#8792A6;}
-  footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
-  footer a{text-decoration:none;color:#AAB2C4;}
-  footer a:hover{color:#fff;}
-  .foot-bottom{
-    display:flex;justify-content:space-between;
-    padding-top:22px;flex-wrap:wrap;gap:10px;
-    color:#6D7791;font-size:13px;
-  }
-
-  /* ---------- Responsive ---------- */
-  @media (max-width:920px){
-    .navlinks, .nav-cta .btn-ghost{display:none;}
-    .menu-toggle{display:block;}
-    .hero .wrap{grid-template-columns:1fr;}
-    .cert-stack{height:300px;margin-top:24px;}
-    .section-head{grid-template-columns:1fr;}
-    .steps{grid-template-columns:repeat(2,1fr);}
-    .step{border-right:none;border-bottom:1px solid #333F55;padding-bottom:22px;}
-    .why-grid{grid-template-columns:1fr;}
-    .foot-grid{grid-template-columns:1fr 1fr;}
-    .reg-row{grid-template-columns:1fr;gap:8px;}
-    .reg-row .reg-link{justify-self:start;}
-  }
-  @media (max-width:600px){
-    .hero h1{font-size:36px;}
-    .wrap{padding:0 20px;}
-    .steps{grid-template-columns:1fr;}
-    .foot-grid{grid-template-columns:1fr;}
-    .insight-row{grid-template-columns:1fr;gap:6px;}
-    .cta-band .wrap{flex-direction:column;align-items:flex-start;}
-  }
-</style>
+<meta name="description" content="ISO 9001, 14001, 27001, HACCP, and health & safety certification consulting for UAE businesses. Free gap assessment, senior consultants, fixed-scope pricing.">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
@@ -417,7 +26,7 @@
 
 <header class="main">
   <nav class="nav wrap">
-    <a href="#" class="logo">FAB<span class="plus">+</span> PLUS</a>
+    <a href="index.html" class="logo">FAB<span class="plus">+</span> PLUS</a>
     <ul class="navlinks">
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Process</a></li>
@@ -429,9 +38,24 @@
       <a href="#contact" class="btn btn-ghost">Call us</a>
       <a href="#contact" class="btn btn-primary">Free gap assessment</a>
     </div>
-    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 </header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<nav class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#why">Why us</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:+971547567336" class="btn btn-ghost">Call +971 54 756 7336</a>
+  <a href="#contact" class="btn btn-primary">Free gap assessment</a>
+</nav>
 
 <section class="hero">
   <div class="wrap">
@@ -470,14 +94,6 @@
   </div>
 </section>
 
-<div class="founding">
-  <div class="wrap">
-    <span class="founding-mark">Founding clients</span>
-    <p>We're a new practice, which means <strong>your project gets our senior consultants directly</strong> — not a delegated account team. We're building our client roster deliberately, one certification at a time.</p>
-    <a href="#contact" class="founding-link">See our approach →</a>
-  </div>
-</div>
-
 <section id="process" class="process">
   <div class="wrap">
     <div class="section-head">
@@ -504,37 +120,37 @@
       <div class="reg-row">
         <span class="code">ISO 9001</span>
         <div><h3>Quality Management System</h3><p>Build a QMS that satisfies auditors and actually improves how your team works day to day.</p></div>
-        <a href="#" class="reg-link">View service →</a>
+        <a href="services/iso-9001.html" class="reg-link">View service →</a>
       </div>
       <div class="reg-row">
         <span class="code">ISO 14001</span>
         <div><h3>Environmental Management</h3><p>Reduce environmental risk and meet regulatory reporting requirements across the UAE.</p></div>
-        <a href="#" class="reg-link">View service →</a>
+        <a href="services/iso-14001.html" class="reg-link">View service →</a>
       </div>
       <div class="reg-row">
         <span class="code">ISO/IEC 27001</span>
         <div><h3>Information Security Management</h3><p>Protect client and company data with a security framework aligned to NESA and ISO requirements.</p></div>
-        <a href="#" class="reg-link">View service →</a>
+        <a href="services/iso-27001.html" class="reg-link">View service →</a>
       </div>
       <div class="reg-row">
         <span class="code">HACCP · GMP</span>
         <div><h3>Food Safety Systems</h3><p>Hazard analysis and good manufacturing practice for restaurants, processors, and distributors.</p></div>
-        <a href="#" class="reg-link">View service →</a>
+        <a href="services/haccp.html" class="reg-link">View service →</a>
       </div>
       <div class="reg-row">
         <span class="code">ISO 45001</span>
         <div><h3>Health &amp; Safety Management</h3><p>Reduce workplace incidents and meet occupational health and safety obligations.</p></div>
-        <a href="#" class="reg-link">View service →</a>
+        <a href="services/iso-45001.html" class="reg-link">View service →</a>
       </div>
       <div class="reg-row">
         <span class="code">ISO 17025</span>
         <div><h3>Laboratory Management</h3><p>Accreditation support for testing and calibration laboratories.</p></div>
-        <a href="#" class="reg-link">View service →</a>
+        <a href="services/iso-17025.html" class="reg-link">View service →</a>
       </div>
       <div class="reg-row">
         <span class="code">Inspection</span>
         <div><h3>Product Conformity &amp; Inspection</h3><p>Pre-shipment and compliance inspection for consumer and electrical products.</p></div>
-        <a href="#" class="reg-link">View service →</a>
+        <a href="services/inspection.html" class="reg-link">View service →</a>
       </div>
     </div>
   </div>
@@ -573,22 +189,22 @@
       <p class="desc">Practical guides for the questions we get asked most, before you ever pick up the phone.</p>
     </div>
     <div class="insights-list">
-      <a href="#" class="insight-row">
+      <a href="insights/iso-9001-vs-iso-14001.html" class="insight-row">
         <span class="tag">GUIDE</span>
         <h3>ISO 9001 vs. ISO 14001: which does your business need first?</h3>
         <span class="arrow">Read →</span>
       </a>
-      <a href="#" class="insight-row">
+      <a href="insights/haccp-certification-timeline.html" class="insight-row">
         <span class="tag">GUIDE</span>
         <h3>How long does HACCP certification actually take in the UAE?</h3>
         <span class="arrow">Read →</span>
       </a>
-      <a href="#" class="insight-row">
+      <a href="insights/cost-of-iso-certification-dubai.html" class="insight-row">
         <span class="tag">GUIDE</span>
         <h3>The real cost of ISO certification in Dubai, broken down</h3>
         <span class="arrow">Read →</span>
       </a>
-      <a href="#" class="insight-row">
+      <a href="insights/nesa-compliance-audit-checklist.html" class="insight-row">
         <span class="tag">GUIDE</span>
         <h3>What a NESA compliance audit checks, step by step</h3>
         <span class="arrow">Read →</span>
@@ -614,19 +230,19 @@
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="#">Quality Management</a></li>
-          <li><a href="#">Information Security</a></li>
-          <li><a href="#">Food Safety</a></li>
-          <li><a href="#">Inspection</a></li>
+          <li><a href="services/iso-9001.html">Quality Management</a></li>
+          <li><a href="services/iso-27001.html">Information Security</a></li>
+          <li><a href="services/haccp.html">Food Safety</a></li>
+          <li><a href="services/inspection.html">Inspection</a></li>
         </ul>
       </div>
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Process</a></li>
-          <li><a href="#">Insights</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="insights/index.html">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -645,5 +261,6 @@
   </div>
 </footer>
 
+<script src="assets/nav.js" defer></script>
 </body>
 </html>
